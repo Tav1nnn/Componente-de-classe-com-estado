@@ -24,15 +24,15 @@ class App extends Component{
 
     timeoutUpdate = null;
 
-    componentDidMount(){
+    componentDidMount(){//montagem 
       this.handleTimeout();
     }
 
-    componentDidUpdate(){
+    componentDidUpdate(){//atualização
       this.handleTimeout();
     }
 
-    componentWillUnmount(){
+    componentWillUnmount(){//desmontagem
       clearTimeout(this.timeoutUpdate);
     }
 
